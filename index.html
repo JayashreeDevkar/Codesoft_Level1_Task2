@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        #hero {
+            background: royalblue;
+            color: white;
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        #hero h2 {
+            font-size: 36px;
+        }
+
+        .cta-button {
+            background: white;
+            color: royalblue;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        section {
+            padding: 40px 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .feature-box {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .feature-item {
+            width: 30%;
+            background: #f5f5f5;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .product-card {
+            background: #f9f9f9;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .product-card h4 {
+            margin: 15px 0;
+        }
+
+        .product-card .price {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Om Samarth Tailoring Material</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container">
+            <h2>Welcome to Our Shop</h2>
+            <p>Your one-stop shop for premium products at unbeatable prices.</p>
+            <a href="#shop" class="cta-button">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features">
+        <div class="container">
+            <h3>Shop Our Best-Sellers</h3>
+            <div class="feature-box">
+                <div class="feature-item">
+                    <h4>Moon Thread</h4>
+                    <p>Good Quality Threads.</p>
+                </div>
+                <div class="feature-item">
+                    <h4>Ladies Corner</h4>
+                    <p>Shop the all Ladies Tailoring Material .</p>
+                </div>
+                <div class="feature-item">
+                    <h4>Gents Tailoring Material</h4>
+                    <p>Better deal good quality.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop Section -->
+    <section id="shop">
+        <div class="container">
+            <h3>Our Products</h3>
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <img src="thread.webp" alt="Product 1">
+                    <h4>Moon Thread</h4>
+                    <p>Best Quality.</p>
+                    <div class="price">$5</div>
+                    <a href="#" class="cta-button">Buy Now</a>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <img src="gents.avif" alt="Product 2">
+                    <h4>Gents Tailoring Material</h4>
+                    <p>Stay stylish and cozy with our new collection.</p>
+                    <div class="price">$500</div>
+                    <a href="#" class="cta-button">Buy Now</a>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <img src="Ladies.jpg" alt="Product 3">
+                    <h4>Ladies Corner</h4>
+                    <p>Ladies tailoring Material.</p>
+                    <div class="price">$1000</div>
+                    <a href="#" class="cta-button">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h3>Contact Us</h3>
+            <p>If you have any questions or need assistance, feel free to reach out to us!</p>
+            <ul class="social-links">
+                <li><a href="https://www.facebook.com">Facebook</a></li>
+                <li><a href="https://www.twitter.com">Twitter</a></li>
+                <li><a href="https://www.instagram.com">Instagram</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Om Samarth Tailoring Material,Kurduwadi. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
